@@ -1,0 +1,120 @@
+:root {
+  --blue: #007bff;
+  --indigo: #6610f2;
+  --purple: #6f42c1;
+  --pink: #e83e8c;
+  --red: #dc3545;
+  --orange: #fd7e14;
+  --yellow: #ffc107;
+  --green: #28a745;
+  --teal: #20c997;
+  --cyan: rgb(23, 162, 184,0);
+  --white: #fff;
+  --gray: #6c757d;
+  --gray-dark: rgb(52, 58, 64);
+  --primary: #007bff;
+  --secondary: #6d99c0;
+  --success: #28a745;
+  --info: #17a2b8;
+  --warning: #ffc107;
+  --danger: #dc3545;
+  --light: #f8f9fa;
+  --dark: #343a40;
+  --breakpoint-xs: 0;
+  --breakpoint-sm: 576px;
+  --breakpoint-md: 768px;
+  --breakpoint-lg: 992px;
+  --breakpoint-xl: 1200px;
+  --font-family-sans-serif: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  --font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+}
+*{
+  font-family: var(--font-family-monospace);
+  /* background: linear-gradient(180deg,var(--primary),var(--cyan)94.2%); */
+  background: repeating-linear-gradient(45deg, var(--primary), transparent 100px);
+  /* background: -o-linear-gradient(150deg,var(--green),var(--yellow)94.2%); */
+  /* background: radial-gradient(black, transparent); */
+  /* background: repeating-radial-gradient(black, transparent 100px); */
+}
+
+.bk-1{
+  /* background-color: firebrick; */
+  width: 50%;
+  height: 80px;
+  padding: 13px;
+  margin-left: 20%;
+  margin-top: 5%;
+  text-align: center;
+  display: grid;
+  justify-content: space-around;
+}
+.mk-Form{
+  font-size: 25px;
+  font-weight: 200;
+  background-color: var(--gray);
+  padding: 5px;
+  border: 2px groove var(--gray-dark);
+  box-shadow: 0px 24px 36px -11px rgba(52, 54, 68, 0.9);
+  border-radius: 5px;
+  
+}
+.mk-Form input{
+  font-size: 25px;
+  font-weight: 200;
+}
+.btn{
+  margin-top: 5%;
+}
+.bk-2{
+  margin-top: 50px;
+  margin-left: 22%;
+  font-size: 50px;
+  font-weight: 300;
+  height: 200px;
+  width: 600px;
+  padding: 5px;
+  /* color: 
+  {% if message.tags == 'success' %}
+  green
+  {% else %}
+  red
+  {% endif %}; */
+}
+
+
+/* <style>
+    body{
+      background-color: darkgoldenrod;
+      opacity: 0.5;
+    }
+    .bk-1{
+      text-align: center;
+      padding-top:10.5%;
+
+    }
+    .text{
+      text-transform: capitalize;
+      font-size: larger;
+      font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+      font-stretch: expanded;
+    }
+    .mk-Form{
+      padding: 5px;
+      width: 500px;
+      height: 100%;
+      box-shadow: 10px -7px 11px 4px rgba(179, 249, 99, 0.963);
+      background-color: rgba(135, 147, 222, 0.8);
+      border-radius: 8px;
+    }
+    .btn{
+      margin-top: 10px;
+      padding: auto;
+      box-shadow: 0px 24px 36px -11px rgba(0, 0, 0, .9);
+      background-color: burlywood;
+      border-radius: 20px;
+      cursor: pointer;
+    }
+    #guessNumber{
+      background-color: bisque;
+    }
+  </style> */

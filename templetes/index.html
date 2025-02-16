@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Number Gussing</title>
+  <link rel="stylesheet" href="/static/css/style.css">
+</head>
+<body>
+
+  <section class="bk-1">
+    <form action="" method="post" class="mk-Form">
+      {% csrf_token %}
+      <label for="guessNumber" class="text">Enter Number</label>
+      <input type="text" name="guessNumber" id="guessNumber"> <br>
+      <button type="submit" class="btn">Submit</button>
+    </form>
+  </section>
+
+  <br>
+  <section class="bk-2">
+    {% if messages %}
+    <div>
+      {% for messages in messages %}
+      <p style="color: {% if message.tags == 'success' %}green{% else %}red{% endif %};">
+        {{ messages }}
+      </p>
+      {% endfor %}
+    </div>
+    {% endif %}
+    
+  </section>
+
+  <!-- <section>
+    <h3>Previous Guesses</h3>
+    <ul class="result">
+      {% for i in resultOf %}
+      <li>{{ i.guessNumber }}</td>
+      {% endfor %}
+    </ul>
+  </section> -->
+</body>
+</html>
